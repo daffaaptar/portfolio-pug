@@ -1,0 +1,21 @@
+link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css")
+
+style
+  | body {
+  |   overflow: hidden;
+  | }
+
+body
+  .p-5.text-center.bg-image(style="\
+  background-image: url('https://images.pexels.com/photos/2102416/pexels-photo-2102416.jpeg');\
+  height: 100vh ;\
+  background-size: cover ;\
+  background-position: center ;\
+  background-repeat: no-repeat ;\
+  ")
+    .mask(style='background-color: rgba(0, 0, 0, 0.6); height: 90%;')
+      .d-flex.justify-content-center.align-items-center.h-100
+        .text-white
+          h1.mb-3 Daffa Apta Pratama
+          h6.mb-4 PROGRAMMER & PHOTOGRAPHER
+          a.btn.btn-outline-light.btn-lg(href='https://www.youtube.com/watch?v=dQw4w9WgXcQ' role='button') Call to action  
