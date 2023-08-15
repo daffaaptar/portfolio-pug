@@ -1,6 +1,7 @@
 nav.navbar.navbar-expand-lg.bg-body-tertiary
   .container-fluid
-    a.navbar-brand(href='/') PRA
+    a.navbar-brand(href='/')
+      img(src="https://o.remove.bg/downloads/125d78a7-2878-4bf8-b9e4-52ee3352b779/WhatsApp_Image_2023-08-13_at_22_52_03-transformed__2_-removebg-preview.png", alt="", class="navbar-logo")
     button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarColor04' aria-controls='navbarColor04' aria-expanded='false' aria-label='Toggle navigation')
       span.navbar-toggler-icon
     #navbarColor04.collapse.navbar-collapse
@@ -15,3 +16,10 @@ nav.navbar.navbar-expand-lg.bg-body-tertiary
           a.nav-link(href='/portfolio') Portfolio
         li.nav-item
           a.nav-link(href='/contact') Contact
+
+style.
+  .navbar-logo {
+    max-width: 40px; /* Sesuaikan ukuran yang diinginkan */
+    height: auto;
+    padding-left: 10px
+  }

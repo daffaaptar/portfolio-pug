@@ -1,34 +1,45 @@
 include navbar.pug
-title Portfolio
+title Portfolio 
+style
+  | .card {
+  |   height: 200%;
+  | }
+  | .card-img-top {
+  |   object-fit: cover;
+  |   height: 200px; /* Sesuaikan dengan tinggi yang Anda inginkan */
+  |   width: 200%; /* Atur lebar gambar menjadi 100% */
+  | }
+body 
+  .container-fluid
+    .row(style='margin: 50px;')
+      center.col-md-4.col-sm-6
+        .card-deck
+          .card.mb-3
+            .card-body
+              h5.card-title Web Online Shop
+              img.card-img-top(src="https://im.vsco.co/aws-us-west-2/9342a1/85157960/64db1b4d34f6e83143000003/f5607ed0-2589-4650-af30-a411ed14fe638796964882680217771.jpg?w=1200", alt="")
+              p.card-text Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit repellat aspernatur nostrum unde asperiores quo? Beatae magni hic assumenda.
+              .card-footer.text-muted  04 September 2022
 
-.container
-  .section-title.text-center
-    h2 Portfolio
-  .row.portfolio-container(data-aos='fade-up' data-aos-delay='100')
-    .col-lg-4.col-md-6.portfolio-item.filter-design
-      .portfolio-wrap
-        img.img-fluid(src='/images/Sample-PNG-Image.png', alt='Portfolio 1')
-        .portfolio-links
-          a.portfolio-lightbox(href='/images/Sample-PNG-Image.png', data-gallery='portfolioGallery', title='Design 1')
-            i.bx.bx-plus
-          a(href='#') More Details
-    .col-lg-4.col-md-6.portfolio-item.filter-design
-      .portfolio-wrap
-        img.img-fluid(src='assets/img/portfolio/portfolio-2.jpg', alt='Portfolio 2')
-        .portfolio-links
-          a.portfolio-lightbox(href='assets/img/portfolio/portfolio-2.jpg', data-gallery='portfolioGallery', title='Design 2')
-            i.bx.bx-plus
-          a(href='#') More Details
-    .col-lg-4.col-md-6.portfolio-item.filter-design
-      .portfolio-wrap
-        img.img-fluid(src='assets/img/portfolio/portfolio-3.jpg', alt='Portfolio 3')
-        .portfolio-links
-          a.portfolio-lightbox(href='assets/img/portfolio/portfolio-3.jpg', data-gallery='portfolioGallery', title='Design 3')
-            i.bx.bx-plus
-          a(href='#') More Details
-    <!-- Add more portfolio items as needed -->
+      center.col-md-4.col-sm-6
+        .card-deck
+          .card.mb-3
+            .card-body
+              h5.card-title Photographer hut 42 s40
+              img.card-img-top(src="https://im.vsco.co/aws-us-west-2/9342a1/85157960/64db1e2234f6e83143000005/0a292c24-feb0-4995-8a9a-12a234b19d433653236200878722753.jpg?w=1200", alt="")
+              p.card-text Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, eveniet consequatur quidem et aut obcaecati at consequuntur, ipsam fugiat inventore atqua weas.
+              .card-footer.text-muted 7 August 2022
+
+      center.col-md-4.col-sm-6
+        .card-deck
+          .card.mb-3
+            .card-body
+              h5.card-title Desain Kartu Pelajar
+              img.card-img-top(src="https://im.vsco.co/aws-us-west-2/9342a1/85157960/64db23d534f6e83143000007/56c9cfc9-a0dd-40f9-9db1-10b564ef8e1b7511229450732024435.jpg?w=1200", alt="")
+              p.card-text Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit repellat aspernatur nostrum unde asperiores quo? Beatae magni hic assumenda.
+              .card-footer.text-muted 8 October 2022
 
 // CDN Link to AOS Library and Bootstrap Styles
-script(src='https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js')
+script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js')
 link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css')
 link(rel='stylesheet', href='https://bootswatch.com/5/lux/bootstrap.css')
