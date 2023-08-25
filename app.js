@@ -25,5 +25,5 @@ app.get('/contact', function(req, res, next) {
 });
 
 app.listen(3000, function() {
-  console.log('Express berjalan di port: 3000');
+  console.log('Express berjalan di port : 3000');
 });
